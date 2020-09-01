@@ -1,8 +1,8 @@
 import React from "react";
 
 export default class DropContainer extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             cards: [],
         };
@@ -21,6 +21,7 @@ export default class DropContainer extends React.Component {
         if (currentCard) {
             cards.push(currentCard);
             this.setState({ cards: cards });
+            this.props.removeDroppedCard();
         }
     }
 
