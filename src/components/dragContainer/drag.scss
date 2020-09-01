@@ -1,0 +1,35 @@
+.drag-container {
+    padding: 10px;
+    border: 1px solid #345678;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 5px;
+    max-width: 1140px;
+    flex-wrap: wrap;
+
+    &__item {
+        font-weight: 600;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #dfdfdf;
+        margin-right: 10px;
+        text-align: left;
+        min-width: 200px;
+        margin-bottom: 10px;
+
+        &-row {
+            display: flex;
+            justify-content: flex-start;
+
+            &__id {
+                background: #f27707;
+                color: #ffffff;
+                padding: 5px 10px;
+                border-radius: 50%;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
